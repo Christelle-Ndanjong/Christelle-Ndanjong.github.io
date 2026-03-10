@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>VELA</title>
+  <script>
+    // If this page has a Supabase auth token, redirect to login page with it
+    if (window.location.hash && window.location.hash.includes('access_token')) {
+      window.location.replace('https://christelle-ndanjong.github.io/vela/login.html' + window.location.hash);
+    } else {
+      window.location.replace('https://christelle-ndanjong.github.io/vela/index.html');
+    }
+  </script>
+</head>
+<body></body>
+</html>
